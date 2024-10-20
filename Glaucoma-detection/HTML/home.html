@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <title>Detection of Glaucoma Disease</title>
+    <style>
+        /* CSS for select element */
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            width: 100%;
+            max-width: 300px; /* Adjust width as needed */
+        }
+
+        /* CSS for option elements */
+        option {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Additional styles for the form */
+        .container {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            margin-top: 20px;
+        }
+
+        .form-container {
+            margin-right: 20px; /* Space between form and images */
+            flex: 1; /* Allow form to take available space */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px; /* Adjust width as needed */
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__logo"><a href="#">Detection of Glaucoma Disease</a></div>
+        <ul class="nav__links">
+            <li class="link"><a href="..//HTML/home.html">Home</a></li>
+            <li class="link"><a href="#">About Us</a></li>
+            <li class="link"><a href="#">Services</a></li>
+            <li class="link"><a href="..//HTML/feedback.html">Feedback</a></li>
+            <li class="link"><a href="../HTML/index3.html" class="nav__btn">Register</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="form-container">
+            <h1>
+                Welcome to<br />
+                <span class="heading__1">Detection of Glaucoma Disease</span><br />
+                <span class="heading__2"></span>
+            </h1>
+            <form id="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="image-input">Upload an Image:</label>
+                <input type="file" id="image-input" name="image" accept="image/*" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="image__container">
+            <img src="../img/eye1.jpg" alt="header" />
+            <img src="..//img/eye2.jpeg.jpg" alt="header" />
+            <div class="image__content">
+                <ul>
+                    <li>Image Detection</li>
+                </ul>
+                <div class="image__content">
+                    <ul>
+                        <li>Soft Computing</li>
+                    </ul>
+                    <div class="image__content">
+                        <ul>
+                            <li>Deep Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
